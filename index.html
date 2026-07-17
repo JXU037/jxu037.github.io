@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Personal website of Justin Xu — projects, experience, and ways to get in touch." />
+  <title>Justin Xu — Personal Site</title>
+
+  <!-- Open Graph / social preview -->
+  <meta property="og:title" content="Justin Xu" />
+  <meta property="og:description" content="Personal website — projects, experience, and contact." />
+  <meta property="og:type" content="website" />
+
+  <link rel="icon" href="favicon.png" type="image/png" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Skip link for keyboard/screen-reader users -->
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <nav class="nav" aria-label="Primary">
+      <a class="nav__brand" href="#home">JXU</a>
+
+      <button class="nav__toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+
+      <ul class="nav__menu" id="nav-menu">
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#research">Research</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li>
+          <button class="theme-toggle" id="theme-toggle" aria-label="Toggle color theme" title="Toggle theme">
+            <span aria-hidden="true">🌙</span>
+          </button>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <!-- Hero -->
+    <section class="hero" id="home">
+      <div class="container">
+        <p class="hero__eyebrow">Hi, my name is</p>
+        <h1 class="hero__title">Justin Xu</h1>
+        <p class="hero__lead">
+          Building AI Solutions to tackle real-world problems
+        </p>
+        <div class="hero__cta">
+          <a class="btn btn--primary" href="#experience">View my work</a>
+          <a class="btn btn--ghost" href="#contact">Get in touch</a>
+          <a class="btn btn--ghost" href="/media/resume.pdf" download aria-label="Download my resume (PDF)">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                 stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="btn__icon">
+              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+              <polyline points="7 10 12 15 17 10"/>
+              <line x1="12" y1="15" x2="12" y2="3"/>
+            </svg>
+            Download resume
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section class="section" id="about">
+      <div class="container">
+        <h2 class="section__title"><span class="section__num">01.</span> About</h2>
+        <div class="about">
+          <div class="about__text">
+            <p>
+              Hi! My name is Justin Xu, and I am currently a 3rd year undergraduate computer science student at the Georgia Institute of Technology. 
+              I am really interested in software engineering, machine learning, and artificial intelligence. I hope to be 
+              able to use AI to improve business operations, increase productivity, and ultimately make the world
+              a better place. Outside of school, I enjoy playing chess, video games, listening to music, and watching documentaries.
+            </p>
+          </div>
+          <div class="about__aside">
+            <div class="avatar" aria-hidden="true"><img src="avatar.jpg" alt="Justin Xu" onerror="this.style.display='none';" /></div>
+          </div>
+        </div>
+        <p>Here are some technologies I've been working with recently:</p>
+
+        <!-- Scrolling tech-stack gallery. Add/remove a .tech tile per platform.
+             Drop logos in logos/ and set the img src. Missing images fall back to the label. -->
+        <div class="marquee" aria-label="Tech stack">
+          <div class="marquee__track">
+            <figure class="tech">
+              <img src="logos/skills/vscode.svg" alt="VS Code" onerror="this.style.display='none';" />
+              <figcaption>VS Code</figcaption>
+            </figure>
+            <figure class="tech">
+              <img src="logos/skills/cursor.png" alt="Cursor" onerror="this.style.display='none';" />
+              <figcaption>Cursor</figcaption>
+            </figure>
+            <figure class="tech">
+              <img src="logos/skills/python.svg" alt="Python" onerror="this.style.display='none';" />
+              <figcaption>Python</figcaption>
+            </figure>
+            <figure class="tech">
+              <img src="logos/skills/numpy.png" alt="NumPy" onerror="this.style.display='none';" />
+              <figcaption>NumPy</figcaption>
+            </figure>
+            <figure class="tech">
+              <img src="logos/skills/scipy.svg" alt="SciPy" onerror="this.style.display='none';" />
+              <figcaption>SciPy</figcaption>
+            </figure>
+            <figure class="tech">
+              <img src="logos/skills/matplotlib.svg" alt="Matplotlib" onerror="this.style.display='none';" />
+              <figcaption>Matplotlib</figcaption>
+            </figure>
+            <figure class="tech">
+              <img src="logos/skills/pandas.png" alt="Pandas" onerror="this.style.display='none';" />
+              <figcaption>Pandas</figcaption>
+            </figure>
+            <figure class="tech">
+              <img src="logos/skills/flask.svg" alt="Flask" onerror="this.style.display='none';" />
+              <figcaption>Flask</figcaption>
+            </figure>
+            <figure class="tech">
+              <img src="logos/skills/pytorch.svg" alt="PyTorch" onerror="this.style.display='none';" />
+              <figcaption>PyTorch</figcaption>
+            </figure>
+            <figure class="tech">
+              <img src="logos/skills/scikit_learn.svg" alt="Scikit-learn" onerror="this.style.display='none';" />
+              <figcaption>Scikit-learn</figcaption>
+            </figure>
+            <figure class="tech">
+              <img src="logos/skills/huggingface.svg" alt="Hugging Face" onerror="this.style.display='none';" />
+              <figcaption>Hugging Face</figcaption>
+            </figure>
+            <figure class="tech">
+              <img src="logos/skills/langchain.png" alt="LangChain" onerror="this.style.display='none';" />
+              <figcaption>LangChain</figcaption>
+            </figure>
+            <figure class="tech">
+              <img src="logos/skills/chromadb.png" alt="ChromaDB" onerror="this.style.display='none';" />
+              <figcaption>ChromaDB</figcaption>
+            </figure>
+            <figure class="tech">
+              <img src="logos/skills/git.svg" alt="Git" onerror="this.style.display='none';" />
+              <figcaption>Git</figcaption>
+            </figure>
+            <figure class="tech">
+              <img src="logos/skills/docker.png" alt="Docker" onerror="this.style.display='none';" />
+              <figcaption>Docker</figcaption>
+            </figure> 
+            <figure class="tech">
+              <img src="logos/skills/kubernetes.svg" alt="Kubernetes" onerror="this.style.display='none';" />
+              <figcaption>Kubernetes</figcaption>
+            </figure>
+            <figure class="tech">
+              <img src="logos/skills/openshift.svg" alt="Red Hat OpenShift" onerror="this.style.display='none';" />
+              <figcaption>Red Hat OpenShift</figcaption>
+            </figure>
+            <figure class="tech">
+              <img src="logos/skills/azure.svg" alt="Microsoft Azure" onerror="this.style.display='none';" />
+              <figcaption>Microsoft Azure</figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience -->
+    <section class="section" id="experience">
+      <div class="container">
+        <h2 class="section__title"><span class="section__num">02.</span> Experience</h2>
+        <ol class="timeline">
+          <li class="job">
+            <div class="job__logo">
+              <!-- Replace src with your company logo (e.g. logos/acme.svg). Falls back to initials. -->
+              <img src="/logos/orgs/IBM_black_logo.svg" alt="IBM logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='grid';" />
+              <span class="job__logo-fallback" aria-hidden="true">IBM</span>
+            </div>
+            <div class="job__body">
+              <div class="job__head">
+                <h3 class="job__title">Customer Success Engineer Co-op</h3>
+                <span class="job__company"><a href="https://www.ibm.com/" target="_blank" rel="noopener">IBM</a>
+                </span>
+              </div>
+              <p class="job__meta">Aug 2026 – Dec 2026 · On-site</p>
+              <ul class="job__points">
+                <li>Incoming IBM Customer Success Engineer Co-op for fall 2026.</li>
+              </ul>
+            </div>
+          </li>
+          <li class="job">
+            <div class="job__logo">
+              <!-- Replace src with your company logo (e.g. logos/acme.svg). Falls back to initials. -->
+              <img src="/logos/orgs/OSPO_logo.webp" alt="OSPO logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='grid';" />
+              <span class="job__logo-fallback" aria-hidden="true">OSPO</span>
+            </div>
+            <div class="job__body">
+              <div class="job__head">
+                <h3 class="job__title">Software Engineer Intern</h3>
+                  <span class="job__company"><a href="https://ospo.cc.gatech.edu/" target="_blank" rel="noopener">Georgia Tech Open Source Program Office (OSPO)</a></span>
+              </div>
+              <p class="job__meta">May 2025 – Jul 2025 · Remote</p>
+              <ul class="job__points">
+                <li>Worked with IBM engineers to make significant open-source contributions to IBM’s zopen community, which maintains and ports various 
+                  open-source software on IBM's z/OS mainframes.</li>
+
+                <li>Ported various open-source software tools such as Ansible directly on z/OS, enabling automated configuration management and deployment 
+                  right from automation pipelines.</li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="job">
+            <div class="job__logo">
+              <img src="/logos/orgs/novelis_logo.jpg" alt="Novelis logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='grid';" />
+              <span class="job__logo-fallback" aria-hidden="true">NL</span>
+            </div>
+            <div class="job__body">
+              <div class="job__head">
+                <h3 class="job__title">Research and Development Intern</h3>
+                <span class="job__company"><a href="https://www.novelis.com/" target="_blank" rel="noopener">Novelis</a></span>
+              </div>
+              <p class="job__meta">Jun 2023 – Jul 2023 · On-site</p>
+              <ul class="job__points">
+                <li>Worked with a team to develop a proof-of-concept robotic autonomous system using a Raspberry Pi and a UR-16e robotic arm and for transporting 
+                  and administering a three-point bend test on various aluminum alloy samples.</li>
+
+                <li> Used python modules such as threading, OS, and sys libraries to control steppers simultaneously using pulse width modulation (PWM) signals and 
+                  to program general purpose input/output (GPIO) pins to receive and send signals between various hardware, such as limit switches, test machinery, and the UR16e robotic arm.</li>
+                <br>
+                <video width="640" height="360" src="/media/novelis_demo.mp4" alt="Video of the Novelis robotic arm" controls></video>
+                <figcaption>Final video presentation of the UR-16e robotic arm transporting and administering a three-point bend test on various aluminum alloy samples.</figcaption>
+                <br>
+                <img src="/media/novelis_group_photo.jpg" alt="Group photo of the Novelis interns">
+                <figcaption>Me (far left) with the Novelis intern team at the end of the internship. On the right you can see the UR16e robotic arm and the test machinery.</figcaption>
+              </ul>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- Research -->
+    <section class="section" id="research">
+      <div class="container">
+        <h2 class="section__title"><span class="section__num">03.</span> Research</h2>
+        <ol class="timeline">
+          <li class="job">
+            <div class="job__logo">
+              <!-- Replace src with your company logo (e.g. logos/acme.svg). Falls back to initials. -->
+              <img src="/logos/orgs/EIC_logo.jpg" alt="EIC logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='grid';" />
+              <span class="job__logo-fallback" aria-hidden="true">EIC</span>
+            </div>
+            <div class="job__body">
+              <div class="job__head">
+                <h3 class="job__title">Undergraduate Research Intern</h3>
+                <span class="job__company"><a href="https://eiclab.scs.gatech.edu/" target="_blank" rel="noopener">Efficient and Intelligent Computing (EIC) Lab</a></span>
+              </div>
+              <p class="job__meta">Oct 2025 – Dec 2025 · Remote</p>
+              <ul class="job__points">
+                <li>Developed scripts enabling improved model conversion and quantization pipeline for edge deployment of AI models.</li>
+                <li>Analyzed caching mechanisms in Diffusion LLM (dLLM) models for potential improvements in performance and efficiency.</li>
+                <br>
+                <img src="/media/EIC_cosine_sim.png" alt="Cosine similarity heatmap">
+                <figcaption>Cosine similarity heatmap of the output logits between different diffusion steps. The darker colors indicate less similarity, while the lighter colors indicate more similarity.</figcaption>
+                <br>
+                <img src="/media/EIC_hitrate.png" alt="Hitrate heatmap">
+                <figcaption>Hitrate heatmap of the output logits between different diffusion steps, calculated by computing the percentage of matching tokens within
+                  the top 2048 most probable tokens. The darker colors indicate a lower hitrate percentage, while the lighter colors indicate a higher hitrate percentage.
+                </figcaption>
+              </ul>
+            </div>
+          </li>
+          <li class="job">
+            <div class="job__logo">
+              <!-- Replace src with your company logo (e.g. logos/acme.svg). Falls back to initials. -->
+              <img src="/logos/orgs/SURS_logo.png" alt="SURS logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='grid';" />
+              <span class="job__logo-fallback" aria-hidden="true">SURS</span>
+            </div>
+            <div class="job__body">
+              <div class="job__head">
+                <h3 class="job__title">Undergraduate Researcher</h3>
+                <span class="job__company"><a href="https://sustainableurbansystems.com/" target="_blank" rel="noopener">Sustainable Urban Systems Lab (SURS)</a></span>
+              </div>
+              <p class="job__meta">Jan 2025 – May 2026 · On-site</p>
+              <ul class="job__points">
+                <li>Developed agent-based simulation software in Python that uses game theory and no-regret dynamics to simulate the demographic changes of the Atlanta Beltline. </li>
+                <li>Used python modules such as threading, OS, requests, pandas, pickle, and matplotlib to fetch, store, cache, and visualize simulation data.</li>
+                <br>
+                <img src="/media/updated_sim_gif.gif" alt="Simulation of the Atlanta Beltline">
+                <figcaption>Generated GIF simulation of the Atlanta Beltline. The shading represents the average wealth of each census tract (scaled and normalized), 
+                and the numbers on each census tract represent the population of that census tract.</figcaption>
+                <br>
+                <img src="/media/25-SURS-Justin.jpg" alt="Me presenting my research as part of the ISYE Summer Scholars Program">
+                <figcaption>Me presenting my research as part of the 
+                  <a href="https://ugresearch.isye.gatech.edu/research-awards-programs/summer-scholars-program/past-projects" target="_blank" rel="noopener">ISYE Summer Scholars Program</a>.</figcaption>
+              </ul>
+            </div>
+          </li>
+
+          <li class="job">
+            <div class="job__logo">
+              <img src="/logos/orgs/bhamla_lab_logo.png" alt="Bhamla Lab logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='grid';" />
+              <span class="job__logo-fallback" aria-hidden="true">BL</span>
+            </div>
+            <div class="job__body">
+              <div class="job__head">
+                <h3 class="job__title">Undergraduate Researcher</h3>
+                <span class="job__company"><a href="https://bhamla.com/" target="_blank" rel="noopener">Bhamla Lab</a></span>
+              </div>
+              <p class="job__meta">Jun 2024 – May 2025 · Hybrid</p>
+              <ul class="job__points">
+                <li>Worked on a research project on active polymers using LAMMPS (Large-scale Atomic/Molecular Massively Parallel Simulator) 
+                  Brownian physics simulation software to model the behavior of active polymers in different environments.</li> 
+                <li>Automated the process of collecting, organizing, and visualizing simulation data using Python data analysis packages such as NumPy, SciPy, and Matplotlib.</li>
+                <li>Research presented at the Society for Integrative and Comparative Biology (SICB) 2025 and the American Physical Society (APS) 2025 conferences, and 
+                  accepted to the <a href="https://doi.org/10.1103/ntm6-dz86" target="_blank" rel="noopener">Physical Review Letters (PRL)</a> journal. 
+                  The arxiv preprint can be found <a href="https://arxiv.org/abs/2510.17747" target="_blank" rel="noopener">here</a>.</li>
+                <br>
+                <img src="/media/polymer_sim.gif" alt="Active polymer simulation in LAMMPS">
+                <figcaption>Cylindrically confined active polymer simulation in LAMMPS, visualized using VMD.</figcaption>
+                <br>
+                <img src="/media/SICB_2025.jpg" alt="Me presenting my research at the Society for Integrative and Comparative Biology (SICB) 2025 conference">
+                <figcaption>Me presenting my research at the Society for Integrative and Comparative Biology (SICB) 2025 conference.</figcaption>
+              </ul>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section class="section" id="projects">
+      <div class="container">
+        <h2 class="section__title"><span class="section__num">04.</span> Projects</h2>
+        <div class="cards">
+          <article class="card">
+            <h3 class="card__title">Spotify Data Summary App</h3>
+            <p class="card__desc">
+              Worked in a team to develop an Android App that allows users to view their Spotify data, including their favorite artists, tracks, and genres, by logging 
+              in with their Spotify account. Developed backend logic of the app by working extensively with Spotify API and Firebase user authentication systems.
+            </p>
+            <ul class="card__tags">
+              <li>Android Studio</li>
+              <li>Spotify API</li>
+              <li>Java</li>
+              <li>Firebase</li>
+              <li>GitHub</li>
+            </ul>
+            <!-- <div class="card__links">
+              <a href="#" aria-label="Project One source code">Code</a>
+              <a href="#" aria-label="Project One live demo">Live</a>
+            </div> -->
+          </article>
+
+          <article class="card">
+            <h3 class="card__title">College Scheduler App</h3>
+            <p class="card__desc">
+              Worked in a team to develop the UI and backend logic of a college scheduler Android app using Android Studio, including functionalities for making 
+              to-do lists, keeping track of meeting times for classes, and keeping track of due dates of assignments and exams.
+            </p>
+            <ul class="card__tags">
+              <li>Android Studio</li>
+              <li>Java</li>
+              <li>GitHub</li>
+            </ul>
+            <!-- <div class="card__links">
+              <a href="#" aria-label="Project Two source code">Code</a>
+              <a href="#" aria-label="Project Two live demo">Live</a>
+            </div> -->
+          </article>
+
+          <article class="card">
+            <h3 class="card__title">TBA (Work in Progress)</h3>
+            <p class="card__desc">
+              Work in progress...
+            </p>
+            <ul class="card__tags">
+              <li>TBA</li>
+            </ul>
+            <!-- <div class="card__links">
+              <a href="#" aria-label="Project Three source code">Code</a>
+              <a href="#" aria-label="Project Three live demo">Live</a>
+            </div> -->
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section section--contact" id="contact">
+      <div class="container">
+        <h2 class="section__title"><span class="section__num">05.</span> Contact</h2>
+        <p class="contact__lead">
+          I'm always open to interesting conversations and opportunities.
+          The fastest way to reach me is by email.
+        </p>
+        <div class="contact__actions">
+          <a class="btn btn--primary" href="mailto:justinxu013@gmail.com">Say hello</a>
+        </div>
+
+        <ul class="socials" aria-label="Social links">
+          <li>
+            <a href="https://github.com/JXU037" target="_blank" rel="noopener" aria-label="GitHub" title="GitHub">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M12 .5a11.5 11.5 0 0 0-3.64 22.41c.58.11.79-.25.79-.56v-2c-3.2.7-3.88-1.37-3.88-1.37-.53-1.34-1.29-1.7-1.29-1.7-1.05-.72.08-.71.08-.71 1.16.08 1.77 1.2 1.77 1.2 1.03 1.77 2.71 1.26 3.37.96.1-.75.4-1.26.73-1.55-2.55-.29-5.23-1.28-5.23-5.7 0-1.26.45-2.29 1.19-3.1-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11 11 0 0 1 5.8 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.84 1.19 3.1 0 4.43-2.69 5.41-5.25 5.69.41.36.78 1.05.78 2.12v3.14c0 .31.21.68.8.56A11.5 11.5 0 0 0 12 .5Z"/>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/justin-xu-1b4027288/" target="_blank" rel="noopener" aria-label="LinkedIn" title="LinkedIn">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M20.45 20.45h-3.56v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28ZM5.34 7.43a2.07 2.07 0 1 1 0-4.13 2.07 2.07 0 0 1 0 4.13ZM7.12 20.45H3.55V9h3.57v11.45ZM22.22 0H1.77C.79 0 0 .77 0 1.72v20.55C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.72C24 .77 23.2 0 22.22 0Z"/>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="https://scholar.google.com/citations?user=l5pQwyUAAAAJ" target="_blank" rel="noopener" aria-label="Google Scholar" title="Google Scholar">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M5.242 13.769L0 9.5 12 0l12 9.5-5.242 4.269C17.548 11.249 14.978 9.5 12 9.5c-2.977 0-5.548 1.748-6.758 4.269zM12 10a7 7 0 1 0 0 14 7 7 0 0 0 0-14z"/>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="year"></span> Justin Xu. Built with plain HTML, CSS &amp; JS.</p>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
