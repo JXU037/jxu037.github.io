@@ -308,7 +308,7 @@ img { max-width: 100%; display: block; }
 }
 
 /* Projects carousel */
-.carousel {
+.carousel__stage {
   display: flex;
   align-items: center;
   gap: 0.75rem;
@@ -588,7 +588,7 @@ img { max-width: 100%; display: block; }
   .job__logo { width: 64px; height: 64px; border-radius: 12px; }
 
   .card { flex-basis: 80%; }
-  .carousel { gap: 0.35rem; }
+  .carousel__stage { gap: 0.35rem; }
   .carousel__arrow { width: 2.25rem; height: 2.25rem; }
   .carousel__arrow svg { width: 1.1rem; height: 1.1rem; }
 }

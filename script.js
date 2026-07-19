@@ -86,7 +86,11 @@
       return cards[0].getBoundingClientRect().width + gap;
     };
 
-    const atStart = () => viewport.scrollLeft <= 2;
+    // Mandatory scroll-snap + the viewport's left padding mean the leftmost
+    // resting scrollLeft is ~paddingLeft (not 0), so fold that into the threshold.
+    const edgeSlop = () =>
+      (parseFloat(getComputedStyle(viewport).paddingLeft) || 0) + 2;
+    const atStart = () => viewport.scrollLeft <= edgeSlop();
     const atEnd = () =>
       viewport.scrollLeft + viewport.clientWidth >= viewport.scrollWidth - 2;
 
