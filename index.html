@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="Personal website of Justin Xu — projects, experience, and ways to get in touch." />
-  <title>Justin Xu — Personal Site</title>
+  <title>Justin Xu — Portfolio</title>
 
   <!-- Open Graph / social preview -->
   <meta property="og:title" content="Justin Xu" />
@@ -230,10 +230,10 @@
                   to program general purpose input/output (GPIO) pins to receive and send signals between various hardware, such as limit switches, test machinery, and the UR16e robotic arm.</li>
                 <br>
                 <video width="640" height="360" src="/media/novelis_demo.mp4" alt="Video of the Novelis robotic arm" controls></video>
-                <figcaption>Final video presentation of the UR-16e robotic arm transporting and administering a three-point bend test on various aluminum alloy samples.</figcaption>
+                <figcaption>Final video presentation of the UR-16e robotic arm autonomously transporting and administering a three-point bend test on various aluminum alloy samples.</figcaption>
                 <br>
-                <img src="/media/novelis_group_photo.jpg" alt="Group photo of the Novelis interns">
-                <figcaption>Me (far left) with the Novelis intern team at the end of the internship. On the right you can see the UR16e robotic arm and the test machinery.</figcaption>
+                <!--<img src="/media/novelis_group_photo.jpg" alt="Group photo of the Novelis interns">
+                <figcaption>Me (far left) with the Novelis intern team at the end of the internship. On the right you can see the UR16e robotic arm and the test machinery.</figcaption>--> 
               </ul>
             </div>
           </li>
@@ -334,7 +334,15 @@
     <section class="section" id="projects">
       <div class="container">
         <h2 class="section__title"><span class="section__num">04.</span> Projects</h2>
-        <div class="cards">
+        <div class="carousel" data-carousel>
+          <button class="carousel__arrow carousel__arrow--prev" aria-label="Previous project" data-carousel-prev>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                 stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <polyline points="15 18 9 12 15 6"/>
+            </svg>
+          </button>
+
+          <div class="carousel__viewport" data-carousel-viewport>
           <article class="card">
             <h3 class="card__title">Lat-Net: Compressing Lattice Boltzmann Flow Simulation
             </h3>
@@ -374,19 +382,75 @@
           </article>
 
           <article class="card">
-            <h3 class="card__title">TBA (Work in Progress)</h3>
+            <h3 class="card__title">Modeling Processes of Neighborhood Change (MPONC)
+            </h3>
             <p class="card__desc">
-              Work in progress...
+              This research project simulates the impact of the Atlanta Beltline on neighborhood gentrification using game theory and no-regret dynamics. The simulation models agent movement across 
+              census tracts, with agents seeking to minimize costs based on factors like amenity density. The simulation outputs include dynamic visualizations and CSV data tracking population and 
+              income changes across census tracts, providing insights into urban development patterns.
             </p>
             <ul class="card__tags">
-              <li>TBA</li>
+              <li>Python</li>
+              <li>NumPy</li>
+              <li>Pandas</li>
+              <li>Matplotlib</li>
+              <li>Git</li>
             </ul>
-            <!-- <div class="card__links">
-              <a href="#" aria-label="Project Three source code">Code</a>
-              <a href="#" aria-label="Project Three live demo">Live</a>
-            </div> -->
           </article>
+
+          <article class="card">
+            <h3 class="card__title">College Scheduler App
+            </h3>
+            <p class="card__desc">
+              Worked in a team to develop the UI and backend logic of a college scheduler Android app using Android Studio, including functionalities for making 
+              to-do lists, keeping track of meeting times for classes, and keeping track of due dates of assignments and exams.
+            </p>
+            <ul class="card__tags">
+              <li>Java</li>
+              <li>Android Studio</li>
+              <li>GitHub</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <h3 class="card__title">Spotify Data Summary App</h3>
+            </h3>
+            <p class="card__desc">
+              Worked in a team to develop an Android App that allows users to view their Spotify data, including their favorite artists, tracks, and genres, by logging 
+              in with their Spotify account. Developed backend logic of the app by working extensively with Spotify API and Firebase user authentication systems.
+            </p>
+            <ul class="card__tags">
+              <li>Java</li>
+              <li>Android Studio</li>
+              <li>Spotify API</li>
+              <li>Firebase</li>
+              <li>GitHub</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <h3 class="card__title">Business Supply Express Database</h3>
+            </h3>
+            <p class="card__desc">
+              Implemented a MySQL database that manages employees, products, and funds for a variety of businesses, delivery services, and suppliers, including a wide 
+              variety of schemas, stored procedures and views.
+            </p>
+            <ul class="card__tags">
+              <li>SQL</li>
+              <li>MySQL</li>
+            </ul>
+          </article>
+          </div>
+          <button class="carousel__arrow carousel__arrow--next" aria-label="Next project" data-carousel-next>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                 stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <polyline points="9 18 15 12 9 6"/>
+            </svg>
+          </button>
         </div>
+
+        <!-- Pagination dots are generated by script.js -->
+        <div class="carousel__dots" role="tablist" aria-label="Project slides" data-carousel-dots></div>
       </div>
     </section>
 
