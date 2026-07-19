@@ -262,11 +262,20 @@
                 <li>Developed scripts enabling improved model conversion and quantization pipeline for edge deployment of AI models.</li>
                 <li>Analyzed caching mechanisms in Diffusion LLM (dLLM) models for potential improvements in performance and efficiency.</li>
                 <br>
-                <img src="/media/EIC_cosine_sim.png" alt="Cosine similarity heatmap">
+                <!-- <img src="/media/EIC_cosine_sim.png" alt="Cosine similarity heatmap">
                 <figcaption>Cosine similarity heatmap of the output logits between different diffusion steps. The darker colors indicate less similarity, while the lighter colors indicate more similarity.</figcaption>
                 <br>
                 <img src="/media/EIC_hitrate.png" alt="Hitrate heatmap">
                 <figcaption>Hitrate heatmap of the output logits between different diffusion steps, calculated by computing the percentage of matching tokens within
+                  the top 2048 most probable tokens. The darker colors indicate a lower hitrate percentage, while the lighter colors indicate a higher hitrate percentage.
+                </figcaption> -->
+                <div style="display: flex; gap: 10px;">
+                  <img src="/media/EIC_cosine_sim.png" alt="Cosine similarity heatmap" style="width: 50%; height: auto;">
+                  <img src="/media/EIC_hitrate.png" alt="Hitrate heatmap" style="width: 50%; height: auto;">
+                </div>
+                <figcaption> Left: Cosine similarity heatmap of the output logits between different diffusion steps. The darker colors indicate less similarity, while the lighter colors indicate more similarity. 
+                  <br>
+                  Right: Hitrate heatmap of the output logits between different diffusion steps, calculated by computing the percentage of matching tokens within
                   the top 2048 most probable tokens. The darker colors indicate a lower hitrate percentage, while the lighter colors indicate a higher hitrate percentage.
                 </figcaption>
               </ul>
