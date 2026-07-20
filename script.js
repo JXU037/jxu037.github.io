@@ -48,6 +48,12 @@
   document.addEventListener("keydown", (e) => {
     if (e.key === "Escape") closeMenu();
   });
+
+  // Close when clicking outside the nav while open
+  document.addEventListener("click", (e) => {
+    if (!menu.classList.contains("is-open")) return;
+    if (!e.target.closest(".nav")) closeMenu();
+  });
 })();
 
 // ============================================================
