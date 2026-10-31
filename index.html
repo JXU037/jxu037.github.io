@@ -187,25 +187,25 @@
               </div>
               <p class="job__meta">Aug 2026 – Dec 2026 · On-site</p>
               <ul class="job__points">
-                <li>Incoming IBM Customer Success Engineer Co-op for fall 2026.</li>
+                <li>Using Python, open source frameworks, RedHat, and IBM watsonx to architect and develop proof of concept and MVP (minimum viable products) builds to drive enterprise adoption and deployment of IBM’s data and AI solutions. </li>
               </ul>
             </div>
           </li>
           <li class="job">
             <div class="job__logo">
               <!-- Replace src with your company logo (e.g. logos/acme.svg). Falls back to initials. -->
-              <img src="/logos/orgs/OSPO_logo.webp" alt="OSPO logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='grid';" />
+              <img src="/logos/orgs/omp_logo.svg" alt="OMP logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='grid';" />
               <span class="job__logo-fallback" aria-hidden="true">OSPO</span>
             </div>
             <div class="job__body">
               <div class="job__head">
                 <h3 class="job__title">Software Engineer Intern</h3>
-                  <span class="job__company"><a href="https://ospo.cc.gatech.edu/" target="_blank" rel="noopener">Georgia Tech Open Source Program Office (OSPO)</a></span>
+                  <span class="job__company"><a href="https://openmainframeproject.org/projects/zopen-community/" target="_blank" rel="noopener">Open Mainframe Project (OMP) zopen community</a></span>
               </div>
               <p class="job__meta">May 2025 – Jul 2025 · Remote</p>
               <ul class="job__points">
-                <li>Worked with IBM engineers to make significant open-source contributions to IBM’s zopen community, which maintains and ports various 
-                  open-source software on IBM's z/OS mainframes.</li>
+                <li>As part of the <a href="https://ospo.cc.gatech.edu/" target="_blank" rel="noopener">Georgia Tech Open Source Program Office (OSPO)</a> Virtual Summer Internship program, I worked with IBM engineers to make significant open-source 
+                  contributions to IBM’s zopen community, which maintains and ports various open-source software on IBM's z/OS mainframes.</li>
 
                 <li>Ported various open-source software tools such as Ansible directly on z/OS, enabling automated configuration management and deployment 
                   right from automation pipelines.</li>
@@ -225,11 +225,9 @@
               </div>
               <p class="job__meta">Jun 2023 – Jul 2023 · On-site</p>
               <ul class="job__points">
-                <li>Worked with a team to develop a proof-of-concept robotic autonomous system using a Raspberry Pi and a UR-16e robotic arm and for transporting 
-                  and administering a three-point bend test on various aluminum alloy samples.</li>
-
-                <li> Used python modules such as threading, OS, and sys libraries to control steppers simultaneously using pulse width modulation (PWM) signals and 
-                  to program general purpose input/output (GPIO) pins to receive and send signals between various hardware, such as limit switches, test machinery, and the UR16e robotic arm.</li>
+                <li>Worked with a team to develop a robotic autonomous system for transporting and administering a three-point bend test on aluminum alloy samples on a MTS test fixture using a UR16e robotic arm.</li>
+                <li>Designed a system in CAD with custom fabricated CNC plates, 2 step motors, limit switches, and a custom PCB.</li>
+                <li>Programmed the system’s hardware control logic in Python using a Raspberry Pi to autonomously adjust the width of the MTS test fixture based on sample size using 20+ GPIO pins. </li>
                 <br>
                 <div style="display: flex; flex-direction: column; gap: 10px;">
                   <video width="100%" height="auto" src="/media/novelis_demo.mp4" alt="Video of the Novelis robotic arm" controls></video>
@@ -250,9 +248,9 @@
       <div class="container">
         <h2 class="section__title"><span class="section__num">03.</span> Research</h2>
         <ol class="timeline">
+          <!-- 
           <li class="job">
             <div class="job__logo">
-              <!-- Replace src with your company logo (e.g. logos/acme.svg). Falls back to initials. -->
               <img src="/logos/orgs/EIC_logo.jpg" alt="EIC logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='grid';" />
               <span class="job__logo-fallback" aria-hidden="true">EIC</span>
             </div>
@@ -266,13 +264,13 @@
                 <li>Developed scripts enabling improved model conversion and quantization pipeline for edge deployment of AI models.</li>
                 <li>Analyzed caching mechanisms in Diffusion LLM (dLLM) models for potential improvements in performance and efficiency.</li>
                 <br>
-                <!-- <img src="/media/EIC_cosine_sim.png" alt="Cosine similarity heatmap">
+                <img src="/media/EIC_cosine_sim.png" alt="Cosine similarity heatmap">
                 <figcaption>Cosine similarity heatmap of the output logits between different diffusion steps. The darker colors indicate less similarity, while the lighter colors indicate more similarity.</figcaption>
                 <br>
                 <img src="/media/EIC_hitrate.png" alt="Hitrate heatmap">
                 <figcaption>Hitrate heatmap of the output logits between different diffusion steps, calculated by computing the percentage of matching tokens within
                   the top 2048 most probable tokens. The darker colors indicate a lower hitrate percentage, while the lighter colors indicate a higher hitrate percentage.
-                </figcaption> -->
+                </figcaption>
                 <div style="display: flex; gap: 10px;">
                   <img src="/media/EIC_cosine_sim.png" alt="Cosine similarity heatmap" style="width: 50%; height: auto;">
                   <img src="/media/EIC_hitrate.png" alt="Hitrate heatmap" style="width: 50%; height: auto;">
@@ -285,6 +283,7 @@
               </ul>
             </div>
           </li>
+          -->
           <li class="job">
             <div class="job__logo">
               <!-- Replace src with your company logo (e.g. logos/acme.svg). Falls back to initials. -->
@@ -299,7 +298,8 @@
               <p class="job__meta">Jan 2025 – May 2026 · On-site</p>
               <ul class="job__points">
                 <li>Developed agent-based simulation software in Python that uses game theory and no-regret dynamics to simulate the demographic changes of the Atlanta Beltline. </li>
-                <li>Used python modules such as threading, OS, requests, pandas, pickle, and matplotlib to fetch, store, cache, and visualize simulation data.</li>
+                <li>Processed 13 years of Census and OpenStreetMap (OSM) data via APIs and data pipelines to train 1000+ simulated agents moving across 250+ census tracts across Metro Atlanta. </li>
+                <li>Developed automated test scripts for error calculation, convergence detection, and hyperparameter optimization and calibration across 100+ simulation runs. </li>
                 <br>
                 <img src="/media/updated_sim_gif.gif" alt="Simulation of the Atlanta Beltline">
                 <figcaption>Generated GIF simulation of the Atlanta Beltline. The shading represents the average wealth of each census tract (scaled and normalized), 
@@ -325,8 +325,8 @@
               <p class="job__meta">Jun 2024 – May 2025 · Hybrid</p>
               <ul class="job__points">
                 <li>Worked on a research project on active polymers using LAMMPS (Large-scale Atomic/Molecular Massively Parallel Simulator) 
-                  Brownian physics simulation software to model the behavior of active polymers in different environments.</li> 
-                <li>Automated the process of collecting, organizing, and visualizing simulation data using Python data analysis packages such as NumPy, SciPy, and Matplotlib.</li>
+                  Brownian physics simulation software to model the behavior of active polymers in cylindrically confined environments.</li> 
+                <li>Used Python data analysis packages such as NumPy, SciPy, and Matplotlib, and bash scripts to run 1500+ simulation iterations on Georgia Tech’s HPC research clusters, analyzing and processing 100,000+ data points.</li>
                 <li>Research presented at the Society for Integrative and Comparative Biology (SICB) 2025 and the American Physical Society (APS) 2025 conferences, and 
                   published in the <a href="https://doi.org/10.1103/ntm6-dz86" target="_blank" rel="noopener">Physical Review Letters (PRL)</a> journal. 
                   If you want to learn more about this project, you can visit the <a href="https://bhamla.com/project-blog/squeezingworms" target="_blank" rel="noopener">project blog</a>,
